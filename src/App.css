@@ -1,0 +1,56 @@
+.App {
+  height: 100vh;
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 150px;
+  background: #ebedee;
+}
+h1,
+span {
+  color: #228b22;
+}
+
+.default {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.default .date {
+  margin-bottom: 10px;
+}
+
+.heading {
+  font-size: 25px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+input {
+  text-indent: 10px;
+  font-size: 20px;
+  height: 36px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.Dropdown-control {
+  border: none;
+}
+
+.first,
+.second {
+  display: flex;
+}
