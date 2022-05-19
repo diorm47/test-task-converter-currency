@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
 import "./App.css";
@@ -13,7 +13,7 @@ function App() {
   const [info, setInfo] = useState([]);
   const [date, setDate] = useState([]);
   const [from, setFrom] = useState("usd");
-  const [to, setTo] = useState("uah");
+  const [to, setTo] = useState("rub");
   const [options, setOptions] = useState([]);
 
   const [firstValue, setFirstValue] = useState(0);
@@ -30,14 +30,10 @@ function App() {
   useEffect(() => {
     setOptions(Object.keys(info));
     convert1();
-    convert2();
   }, [info]);
 
   function convert1() {
     setSecondValue(firstValue * info[to]);
-  }
-  function convert2() {
-    setFirstValue((info[from] / info[to]) * secondValue);
   }
 
   return (

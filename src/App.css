@@ -1,6 +1,6 @@
 .App {
   height: 100vh;
-  width: 1000px;
+  width: 800px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -25,7 +25,7 @@ span {
 .heading {
   font-size: 25px;
   margin-bottom: 50px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .container {
@@ -53,4 +53,32 @@ input::-webkit-inner-spin-button {
 .first,
 .second {
   display: flex;
+}
+
+@media only screen and (max-width: 800px) {
+  .App {
+    padding: 40px 20px 0 20px;
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+  .heading {
+    font-size: 18px;
+  }
+  .first {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .App {
+    padding: 70px 15px 0 15px;
+    width: 100%;
+  }
+
+  .first {
+    margin-bottom: 20px;
+  }
 }
