@@ -2,7 +2,6 @@ import axios from "axios";
 import { useEffect, useRef, useState } from "react";
 import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
-import Actual from "./actual";
 import "./App.css";
 
 const BASE_URL = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/`;
@@ -47,7 +46,6 @@ function App() {
         <div className="date">
           <span>{date}</span>
         </div>
-        <Actual />
       </div>
       <div className="heading">
         <h1>Currency converter</h1>
